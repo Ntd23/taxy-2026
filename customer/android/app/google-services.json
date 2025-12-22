@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "34123444",
+    "firebase_url": "https://taxy-2026-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "taxy-2026",
+    "storage_bucket": "taxy-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34123444:android:f747a6608636f8a13531e1",
+        "android_client_info": {
+          "package_name": "com.goride.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34123444-75td1oek1tu1gaou1fink1snrs60e3v0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.customer",
+            "certificate_hash": "058f3450406fbe4f4e3ecf26f8d2ca32abd32019"
+          }
+        },
+        {
+          "client_id": "34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGwFLLKwl9vHDDNw4i6023fTxrCwqWxhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "34123444-4opafnacn90rq03btheb5qjk1mn5giiv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goride.customer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34123444:android:2eb4cea8ab7ac3a13531e1",
+        "android_client_info": {
+          "package_name": "com.goride.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34123444-htfusipjntpb7b0h5q6r4vq02mpq49o4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.driver",
+            "certificate_hash": "058f3450406fbe4f4e3ecf26f8d2ca32abd32019"
+          }
+        },
+        {
+          "client_id": "34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGwFLLKwl9vHDDNw4i6023fTxrCwqWxhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "34123444-4opafnacn90rq03btheb5qjk1mn5giiv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goride.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

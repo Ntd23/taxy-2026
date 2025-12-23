@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'package:driver/constant/collection_name.dart';
 import 'package:driver/constant/constant.dart';
 import 'package:driver/controller/dash_board_controller.dart';
@@ -61,10 +62,11 @@ class HomeController extends GetxController {
 
   Location location = Location();
 
-  updateCurrentLocation() async {
+  void updateCurrentLocation() async {
     PermissionStatus permissionStatus = await location.hasPermission();
     if (permissionStatus == PermissionStatus.granted) {
-      location.enableBackgroundMode(enable: true);
+      location.enableBackgroundMode(enable: true).catchError((_) => false);
+
       location.changeSettings(accuracy: LocationAccuracy.high, distanceFilter: double.parse(Constant.driverLocationUpdate.toString()),interval: 2000);
       location.onLocationChanged.listen((locationData) {
         Constant.currentLocation = LocationLatLng(latitude: locationData.latitude, longitude: locationData.longitude);
@@ -83,7 +85,7 @@ class HomeController extends GetxController {
     } else {
       location.requestPermission().then((permissionStatus) {
         if (permissionStatus == PermissionStatus.granted) {
-          location.enableBackgroundMode(enable: true);
+          location.enableBackgroundMode(enable: true).catchError((_) => false);
           location.changeSettings(accuracy: LocationAccuracy.high, distanceFilter: double.parse(Constant.driverLocationUpdate.toString()),interval: 2000);
           location.onLocationChanged.listen((locationData) async {
             Constant.currentLocation = LocationLatLng(latitude: locationData.latitude, longitude: locationData.longitude);

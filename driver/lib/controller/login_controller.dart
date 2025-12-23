@@ -51,22 +51,20 @@ class LoginController extends GetxController {
   Future<UserCredential?> signInWithGoogle() async {
     try {
       final googleSignIn = GoogleSignIn.instance;
-      await googleSignIn.signOut();
       await googleSignIn.initialize(
-        serverClientId: '34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com',
+        serverClientId:
+        '34123444-6qn89le2uj64effquee4g12ooda182gj.apps.googleusercontent.com', // WEB client id
       );
       final GoogleSignInAccount account = await googleSignIn.authenticate(
         scopeHint: const <String>['email'],
       );
       // Obtain the auth details from the request
-      final GoogleSignInAuthentication auth = await account.authentication;
+      final GoogleSignInAuthentication auth =  account.authentication;
       final String? idToken = auth.idToken;
-      final clientAuth = await account.authorizationClient
-          .authorizeScopes(const <String>['email']);
-      final String accessToken = clientAuth.accessToken;
+
       // Create a new credential
       final credential = GoogleAuthProvider.credential(
-        accessToken: accessToken,
+        accessToken: null,
         idToken: idToken,
       );
 

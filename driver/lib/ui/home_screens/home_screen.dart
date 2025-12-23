@@ -19,13 +19,15 @@ class HomeScreen extends StatelessWidget {
           FireStoreUtils().closeStream();
         },
         builder: (controller) {
+          final wallet= double.tryParse(controller.driverModel.value.walletAmount?.toString() ?? '',) ?? 0.0;
+            final minDeposit=double.tryParse(Constant.minimumDepositToRideAccept.toString(),) ?? 0.0;
           return Scaffold(
             backgroundColor: AppColors.primary,
             body: controller.isLoading.value
                 ? Constant.loader(context)
                 : Column(
                     children: [
-                      double.parse(controller.driverModel.value.walletAmount.toString()) >= double.parse(Constant.minimumDepositToRideAccept)
+                      wallet >= minDeposit
                           ? SizedBox(
                               height: Responsive.width(8, context),
                               width: Responsive.width(100, context),

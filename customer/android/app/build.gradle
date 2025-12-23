@@ -55,7 +55,14 @@ android {
         versionName flutterVersionName
         multiDexEnabled true
     }
-
+	 signingConfigs {
+        debug {
+            storeFile file("../keystore/debug.keystore")
+            storePassword "android"
+            keyAlias "debugKeyStore"
+            keyPassword "android"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

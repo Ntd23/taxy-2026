@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "34123444-75td1oek1tu1gaou1fink1snrs60e3v0.apps.googleusercontent.com",
+          "client_id": "34123444-sr8nvckiu2q48pf5sjjknr4dr0rapgru.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.goride.customer",
-            "certificate_hash": "058f3450406fbe4f4e3ecf26f8d2ca32abd32019"
+            "certificate_hash": "e94ae6cd18c4d4ed3613cd49038f6454fcab8377"
           }
         },
         {
@@ -59,19 +59,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "34123444-3v07j2cdlb3orvd4tcu22tth37gte0mq.apps.googleusercontent.com",
+          "client_id": "34123444-m8o3pgvkc7bo9d1gmqif9ogca9k50ocn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.goride.driver",
-            "certificate_hash": "68eadb25571139733834c6e4861c8799242c3a13"
-          }
-        },
-        {
-          "client_id": "34123444-htfusipjntpb7b0h5q6r4vq02mpq49o4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.goride.driver",
-            "certificate_hash": "058f3450406fbe4f4e3ecf26f8d2ca32abd32019"
+            "certificate_hash": "e94ae6cd18c4d4ed3613cd49038f6454fcab8377"
           }
         },
         {

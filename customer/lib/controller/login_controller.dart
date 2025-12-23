@@ -65,13 +65,10 @@ class LoginController extends GetxController {
       if (idToken == null) {
         throw Exception('Google Sign-In returned null idToken');
       }
-      final clientAuth = await account.authorizationClient
-          .authorizeScopes(const <String>['email']);
-      final String accessToken = clientAuth.accessToken;
 
       // Create a new credential
       final credential = GoogleAuthProvider.credential(
-        accessToken: accessToken,
+        accessToken: null,
         idToken: idToken,
       );
 
